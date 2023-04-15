@@ -4,6 +4,7 @@
 
 from tqdm import tqdm
 from sklearn.metrics import ndcg_score
+from model_inference import model_inference_dataset
 
 def count_ndcg_for_all_resumes(model, df, k=None):
   '''
